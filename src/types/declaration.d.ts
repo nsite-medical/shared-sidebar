@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 declare module "next-auth" {}
 
 declare module "next-auth/jwt" {}
