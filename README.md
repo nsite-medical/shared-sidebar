@@ -53,13 +53,6 @@ Add path alias to your `tsconfig.json`:
 }
 ```
 
-## Quick Start
-
-See `examples/` directory for complete working examples:
-- `basic-usage.tsx` - Simple sidebar setup
-- `with-next-auth.tsx` - NextAuth.js integration
-- `custom-components.tsx` - Custom UserInfo and LogoutButton
-
 ## API Reference
 
 See full documentation in SHARED_SIDEBAR_PLAN.md
