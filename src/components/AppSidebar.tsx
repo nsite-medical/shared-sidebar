@@ -83,6 +83,7 @@ export function AppSidebar({
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton
                       asChild
+                      onClick={item.onClick}
                       isActive={item.url === pathname}
                       className="data-[active=true]:bg-primary! data-[active=true]:text-white!"
                     >

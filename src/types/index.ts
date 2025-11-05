@@ -6,6 +6,7 @@ export interface NavigationItem {
   url: string;
   icon: React.ComponentType<{ className?: string }>;
   isActive?: boolean;
+  onClick?: () => void;
 }
 
 export interface NavigationGroup {
