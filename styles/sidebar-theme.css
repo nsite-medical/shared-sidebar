@@ -1,0 +1,112 @@
+/**
+ * Sidebar Theme CSS Variables
+ *
+ * This file documents the required CSS variables for the sidebar component.
+ * Copy these variables to your application's global CSS file (e.g., globals.css)
+ * and customize the values to match your design system.
+ */
+
+@theme inline {
+  /**
+   * Sidebar Color Variables
+   * These control the appearance of the sidebar component
+   */
+
+  /* Sidebar background and foreground */
+  --sidebar: 0 0% 100%;                    /* Background color of sidebar */
+  --sidebar-foreground: 222.2 84% 4.9%;    /* Text color in sidebar */
+
+  /* Primary sidebar elements (active states, focus, etc.) */
+  --sidebar-primary: 222.2 47.4% 11.2%;
+  --sidebar-primary-foreground: 210 40% 98%;
+
+  /* Accent colors for hover/active states */
+  --sidebar-accent: 210 40% 96.1%;
+  --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+
+  /* Border and ring colors */
+  --sidebar-border: 214.3 31.8% 91.4%;
+  --sidebar-ring: 222.2 84% 4.9%;
+
+  /**
+   * Border Radius Variables
+   * These control rounded corners throughout the sidebar
+   */
+  --radius: 0.5rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /**
+   * Other Required Variables
+   * These are used by various UI components within the sidebar
+   */
+
+  /* General colors */
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  /* Borders and inputs */
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+
+  /* Background and foreground */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+}
+
+/**
+ * Dark Mode Variables (Optional)
+ * Uncomment and customize if your application supports dark mode
+ */
+
+/*
+@theme inline {
+  @media (prefers-color-scheme: dark) {
+    --sidebar: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 212.7 26.8% 83.9%;
+  }
+}
+*/
+
+/**
+ * Usage Example:
+ *
+ * In your app/globals.css or equivalent:
+ *
+ * @import "tailwindcss";
+ *
+ * @theme inline {
+ *   // Copy the variables from above
+ *   --sidebar: 0 0% 100%;
+ *   // ... etc
+ * }
+ *
+ * Or if using CSS variables approach:
+ *
+ * :root {
+ *   --sidebar: 0 0% 100%;
+ *   --sidebar-foreground: 222.2 84% 4.9%;
+ *   // ... etc
+ * }
+ */
