@@ -3,8 +3,6 @@ import { Avatar, AvatarFallback } from "./ui/avatar";
 import { UserInfoProps } from "../types";
 
 export function UserInfo({ user, CustomAvatar, className }: UserInfoProps) {
-  const AvatarComponent = CustomAvatar || Avatar;
-
   // Handle both firstName/lastName and name formats
   const displayName = user.firstName && user.lastName
     ? `${user.firstName} ${user.lastName}`

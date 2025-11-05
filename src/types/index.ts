@@ -45,7 +45,7 @@ export interface AppSidebarProps {
 
   // User & Auth
   user?: UserData;
-  UserComponent?: React.ComponentType<{ user: any }>;
+  UserComponent?: React.ComponentType<{ user: UserData }>;
 
   // Actions
   onLogout?: () => void | Promise<void>;
@@ -62,7 +62,7 @@ export interface AppSidebarProps {
 // UserInfo Props
 export interface UserInfoProps {
   user: UserData;
-  CustomAvatar?: React.ComponentType<any>;
+  CustomAvatar?: React.ComponentType<{ user: UserData }>;
   className?: string;
 }
 
