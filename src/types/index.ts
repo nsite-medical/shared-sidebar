@@ -56,7 +56,7 @@ export interface AppSidebarProps {
 
   // Styling
   className?: string;
-  variant?: "default" | "inset" | "floating";
+  variant?: "sidebar" | "inset" | "floating";
 }
 
 // UserInfo Props
