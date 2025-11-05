@@ -51,7 +51,7 @@ export function AppSidebar({
   return (
     <Sidebar variant={variant} className={`border-r m-0 bg-white ${className || ""}`}>
       <SidebarHeader className="items-center justify-center py-4 bg-white">
-        <Link href="/" passHref>
+        <Link href="https://platform.mybackhub.com" passHref>
           <div className="flex justify-center items-center">
             {open ? (
               <Image
