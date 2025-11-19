@@ -1,6 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -38,7 +37,6 @@ export function AppSidebar({
   className,
   variant = "inset",
 }: AppSidebarProps) {
-  const pathname = usePathname();
   const { open } = useSidebar();
 
   // Check if sidebar should render
@@ -84,7 +82,7 @@ export function AppSidebar({
                     <SidebarMenuButton
                       asChild
                       onClick={item.onClick}
-                      isActive={item.url === pathname}
+                      isActive={item.isActive}
                       className="data-[active=true]:bg-primary! data-[active=true]:text-white!"
                     >
                       <Link href={item.url} passHref>
@@ -109,7 +107,7 @@ export function AppSidebar({
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton
                       asChild
-                      isActive={item.url === pathname}
+                      isActive={item.isActive}
                       className="data-[active=true]:bg-color-blue-600!"
                     >
                       <a href={item.url} target="_self" rel="noopener noreferrer">
