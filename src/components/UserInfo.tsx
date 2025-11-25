@@ -1,5 +1,5 @@
 "use client";
-import { Avatar, AvatarFallback } from "./ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { UserInfoProps } from "../types";
 
 export function UserInfo({ user, CustomAvatar, className }: UserInfoProps) {
@@ -16,6 +16,7 @@ export function UserInfo({ user, CustomAvatar, className }: UserInfoProps) {
         <CustomAvatar user={user} />
       ) : (
         <Avatar className="w-10 h-10">
+          <AvatarImage src={user.avatar} alt={displayName} />
           <AvatarFallback className="font-semibold">
             {avatarInitial}
           </AvatarFallback>
